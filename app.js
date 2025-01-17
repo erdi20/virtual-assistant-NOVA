@@ -52,7 +52,7 @@ function takeCommand(message) {
   if (message.includes("nova")) {
     const command = message.replace("nova", "").trim(); 
     if (command.includes("cuaca hari ini")) {
-      fetch("https://api.openweathermap.org/data/2.5/weather?q=Jombang&appid= taruh API disini  =metric")
+      fetch("https://api.openweathermap.org/data/2.5/weather?q=Jombang&appid= taruh key API disini  =metric")
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
