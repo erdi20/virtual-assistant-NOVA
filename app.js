@@ -50,9 +50,9 @@ recognition.start(); // Mulai mendengarkan
 
 function takeCommand(message) {
   if (message.includes("nova")) {
-    const command = message.replace("nova", "").trim(); // Menghapus kata "jarvis" dari perintah
+    const command = message.replace("nova", "").trim(); 
     if (command.includes("cuaca hari ini")) {
-      fetch("https://api.openweathermap.org/data/2.5/weather?q=Jombang&appid=a1747de59057c896fbeed9e63d15c0ae&units=metric")
+      fetch("https://api.openweathermap.org/data/2.5/weather?q=Jombang&appid= taruh API disini  =metric")
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
